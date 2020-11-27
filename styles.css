@@ -1,0 +1,752 @@
+*, body, main, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav ul,li{
+    list-style: none;
+}
+
+p{
+    font-weight: bolder;
+    font-size: 150%;
+    line-height: 15px;
+}
+
+/* navbar */
+nav{
+    position: absolute;
+    margin-left: 0;
+    padding-left: 0;
+    height: 100%;
+    width: 120px;
+    background-color: #fff;
+    box-shadow: -1px -7px 20px 0px #888;
+    align-items: center;
+    text-align: center;
+
+    position: fixed;
+}
+
+nav img{
+    padding-top: 40px;
+}
+
+/* header */
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-left: 65px;
+    position: fixed;
+    z-index: 999;
+}
+.header .searchIcon{
+    margin-right: 20px;
+}
+
+.foodItems h1{
+    margin: auto;
+}
+.cartItems h1{
+    margin: auto;
+}
+.cartItems img{
+    margin-left: 0;
+}
+
+
+.foodItems{
+    background-color: #fff;
+    box-shadow: -1px 7px -20px 0px #888;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+
+.cartItems{
+    background-color: #fff;
+    box-shadow: 1px 0px 5px 0px #888;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+
+
+    font-size: 2.3rem;
+}
+.cartText{
+    padding-top: 20px;
+}
+
+
+
+
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(190, 195, 202, 0.3);
+    
+}
+
+
+/* card */
+.cardContainer{
+    margin-left: 200px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.card{
+    margin-left: 40px;
+    padding-top: 20px;
+    border: none;
+    background: none;
+    line-height: 10px;
+    
+}
+
+.card-body{
+    padding-left: 0;
+}
+
+.card .card-text{
+    font-weight: normal;
+}
+
+
+/* cart */
+
+
+.cartContainer{
+    background-color: #fff;
+    box-shadow: -1px 7px -20px 0px #888;
+    position: fixed;
+    margin-top: 100px;
+    margin-left:65px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.cartContainer img{
+    position: absolute;
+    right: 80%;
+}
+
+.cartItems h1{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.cartContainer>h2{
+    position: absolute;
+    margin-top: 200px;
+    right: 80%;
+}
+
+.cartContainer>p{
+    position: absolute;
+    margin-top: 240px;
+    right: 78%;
+}
+
+.txtCart{
+    color: rgb(199, 191, 191);
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 411px) {
+    /* navbar */
+   
+    nav{
+        height: 70px;
+        width: 60px;
+        z-index: 999;
+        
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        padding-top: 20px;
+        padding-left: 25px;
+        height: 50px;
+    }
+
+
+    /* header */
+    .header{
+        width: 100%;
+        height: 70px;
+        margin-left: 40px;
+        position: fixed;
+        z-index: 999;
+        
+    }
+
+    .foodItems{
+        box-shadow: -1px 7px -20px 6px #888;
+    }
+
+    .header .searchIcon{
+        margin-right: 60px;
+        height: 25px;
+    }
+
+    .foodItems h1{
+        margin-left: 80px;
+        font-size: 20px;
+    }
+    
+    .header .cartItems{
+        position: fixed;
+        bottom: 0;
+    }
+
+    .cartItems{
+        padding: 0;
+        margin: 0;
+        left: 0px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .cartItems h1{
+        margin: auto;
+        font-size: 20px;
+    }
+    
+    .nob{
+        height: 40px;
+    }
+
+    /* card */
+    .cardContainer{
+        margin-left: 0px;
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    .card{
+        margin-left: 40px;
+        padding-top: 5px;
+        border: none;
+        background: none;
+        line-height: 10px;
+        
+    }
+
+    .card-body{
+        padding-left: 0;
+    }
+
+    .card .card-text{
+        font-weight: normal;
+    }
+    .card-img-top{
+        width: 16rem;
+       
+    }
+
+
+    .card p{
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+
+    .cartContainer{
+        display: none;
+    }
+
+}
+
+@media (min-width: 411px) {
+    /* navbar */
+   
+    nav{
+        height: 70px;
+        width: 60px;
+        z-index: 999;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        padding-top: 20px;
+        padding-left: 25px;
+        height: 50px;
+    }
+
+
+    /* header */
+    .header{
+        width: 100%;
+        height: 70px;
+        margin-left: 40px;
+        position: fixed;
+        z-index: 999;
+        
+    }
+
+    .foodItems{
+        box-shadow: -1px 7px -20px 6px #888;
+    }
+
+    .header .searchIcon{
+        margin-right: 10px;
+        height: 25px;
+    }
+
+    .foodItems h1{
+        margin-left: 80px;
+        font-size: 20px;
+    }
+    
+    .cartItems{
+        width: 40%;
+    }
+
+    .cartItems h1{
+        margin: auto;
+        font-size: 20px;
+    }
+    
+    .nob{
+        height: 40px;
+    }
+
+    /* card */
+    .cardContainer{
+        margin-left: 0px;
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    .card{
+        margin-left: 20px;
+        padding-top: 5px;
+        border: none;
+        background: none;
+        line-height: 10px;
+        
+    }
+
+    .card-body{
+        padding-left: 0;
+    }
+
+    .card .card-text{
+        font-weight: normal;
+    }
+    .card-img-top{
+        width: 16rem;
+       
+    }
+
+    .card p{
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+
+    .cartContainer{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+   
+    nav{
+        height: 70px;
+        width: 60px;
+        z-index: 999;
+        
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        padding-top: 20px;
+        padding-left: 25px;
+        height: 50px;
+    }
+
+
+    /* header */
+    .header{
+        width: 100%;
+        height: 70px;
+        margin-left: 40px;
+        position: fixed;
+        z-index: 999;
+        
+    }
+    .foodItems{
+        padding-left: 150px;
+    }
+    .header .searchIcon{
+        margin-right: 60px;
+        height: 25px;
+    }
+
+    .foodItems h1{
+        margin-left: 80px;
+        font-size: 20px;
+    }
+    
+    .cartItems h1{
+        margin: auto;
+        font-size: 20px;
+    }
+    
+    /* card */
+    .cardContainer{
+        margin-left: 0px;
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    .card{
+        margin-left: 8px;
+        padding-top: 5px;
+        border: none;
+        background: none;
+        line-height: 10px;
+    }
+
+    .card-body{
+        padding-left: 0px;
+    }
+
+    .card .card-text{
+        font-weight: normal;
+    }
+    .card-img-top{
+        width: 16rem;
+    }
+
+    .card p{
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+
+
+
+
+
+    .cartContainer{
+        display: block;
+        margin-left: 40px;
+        margin-top: 68px;
+    }
+
+    
+    .cartContainer img{
+        position: absolute;
+        right: 80%;
+        height: 130px;
+    }
+
+    .cartItems h1{
+        font-size: 30px;
+        font-weight: normal;
+        
+    }
+
+    .cartContainer>h2{
+        position: absolute;
+        margin-top: 120px;
+        right: 80%;
+        font-size: 20px;
+    }
+
+    .cartContainer>p{
+        position: absolute;
+        margin-top: 150px;
+        right: 74%;
+        font-size: 14px;
+    }
+
+    
+}
+
+
+
+@media (min-width: 992px) { 
+
+
+    nav{
+        position: absolute;
+        margin-left: 0;
+        padding-left: 0;
+        height: 100%;
+        width: 80px;
+        background-color: #fff;
+        box-shadow: -1px -7px 20px 0px #888;
+        align-items: center;
+        text-align: center;
+    
+        position: fixed;
+    }
+
+    nav img{
+        display: block;
+        height: 80px;
+        padding-left: 20px;
+    }
+
+    .header{
+        height: 60px;
+    }
+
+    .foodItems{
+        padding-left: 250px;
+    }
+
+    .foodItems h1{
+        font-size: 30px;
+    }
+
+    /* card */
+    .cardContainer{
+        margin-left:90px;
+        margin-top: 100px;
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-img-top{
+        width: 17rem;
+       
+    }
+
+    .card{
+        margin-left: 10px;
+        padding-top: 20px;
+        border: none;
+        background: none;
+        line-height: 10px;
+        
+    }
+
+    .card-body{
+        padding-left: 0;
+    }
+
+    .card .card-text{
+        font-weight: normal;
+    }
+    
+    /* cart */
+
+    .cartContainer{
+        margin-top: 60px;
+    }
+
+    .cartContainer img{
+        position: absolute;
+        right: 80%;
+        height: 130px;
+    }
+
+    .cartItems h1{
+        font-size: 30px;
+        font-weight: normal;
+        
+    }
+
+    .cartContainer>h2{
+        position: absolute;
+        margin-top: 120px;
+        right: 80%;
+        font-size: 20px;
+    }
+
+    .cartContainer>p{
+        position: absolute;
+        margin-top: 150px;
+        right: 76%;
+        font-size: 14px;
+    }
+
+    
+
+}
+
+
+@media (min-width: 1200px) { 
+
+    nav{
+        position: absolute;
+        margin-left: 0;
+        padding-left: 0;
+        height: 100%;
+        width: 120px;
+        background-color: #fff;
+        box-shadow: -1px -7px 20px 0px #888;
+        align-items: center;
+        text-align: center;
+    
+        position: fixed;
+    }
+    .menu{
+        padding-left: 40px;
+        height: 70px;
+    }
+    nav img{
+        padding-left: 40px;
+        height: 70;
+    }
+    
+    .foodItems{
+        padding-left: 250px;
+    }
+
+    .header{
+        padding-left: 60px;
+    }
+
+
+    /* card */
+    .cardContainer{
+        margin-left: 130px;
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .foodItems h1{
+        font-size: 30px;
+    }
+
+    .cartContainer{
+        margin-left: 60px;
+    }
+    /* cart */
+    .cartContainer img{
+        position: absolute;
+        right: 80%;
+        height: 180px;
+        
+    }
+
+    .cartItems h1{
+        font-size: 30px;
+        font-weight: normal;
+        
+    }
+
+    .cartContainer>h2{
+        position: absolute;
+        margin-top: 150px;
+        right: 78%;
+        font-size: 30px;
+    }
+
+    .cartContainer>p{
+        position: absolute;
+        margin-top: 190px;
+        right: 78%;
+        font-size: 14px;
+    }
+ }
+
+
+@media (min-width: 1400px) { 
+
+    .header{
+        height: 100px;
+    }
+
+
+    .foodItems h1{
+        font-size: 40px;
+    }
+    .foodItems{
+        padding-left: 350px;
+    }
+
+    /* card */
+    .cardContainer{
+        margin-left:110px;
+        margin-top: 100px;
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-img-top{
+        width: 17rem;
+       
+    }
+
+    .card{
+        margin-left: 10px;
+        padding-top: 20px;
+        border: none;
+        background: none;
+        line-height: 10px;
+        
+    }
+
+    .card-body{
+        padding-left: 0;
+    }
+
+    .card .card-text{
+        font-weight: normal;
+    }
+    
+    
+    .cartContainer img{
+        top: 30px;
+        position: absolute;
+        right: 80%;
+        height: 200px;
+    }
+
+    
+    .cartItems h1{
+        font-size: 40px;
+        font-weight: normal;
+        
+    }
+
+    .cartContainer>h2{
+        position: absolute;
+        margin-top: 200px;
+        right: 79%;
+    }
+
+    .cartContainer>p{
+        position: absolute;
+        margin-top: 240px;
+        right: 79%;
+    }
+
+}
